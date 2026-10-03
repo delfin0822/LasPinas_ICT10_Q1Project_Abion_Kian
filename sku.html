@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OBMC Entrep Fair - SKU Generator</title>
+
+    <link rel="stylesheet"
+          href="https://pyscript.net/releases/2025.2.2/core.css">
+
+    <script type="module"
+            src="https://pyscript.net/releases/2025.2.2/core.js">
+    </script>
+
+ 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <a href="index.html"> Receipt Generator</a>
+        <a href="sku.html"> SKU Generator</a>
+    </nav>
+
+
+    <div class="container">
+
+        <h1>OBMC Entrep Fair</h1>
+
+        <h2>Group 1 - Matcha Cafe</h2>
+
+
+        <div class="form-box">
+
+            <h3>SKU Generator</h3>
+
+
+          
+            <label for="category">
+                Product Category
+            </label>
+
+            <select id="category">
+
+                <option value="milk tea">
+                    Matcha
+                </option>
+
+                <option value="fruit tea">
+                    Hojicha
+                </option>
+
+                <option value="coffee">
+                    Pudding 
+                </option>
+
+                <option value="snacks">
+                    Snacks
+                </option>
+
+            </select>
+
+
+            <label for="product">
+                Product Name
+            </label>
+
+            <select id="product">
+
+                <option value=" Seasalt Matcha">
+                    Seasalt Matcha
+                </option>
+
+                <option value="Banana Pudding Matcha">
+                    Banana Pudding Matcha
+                </option>
+
+                <option value="Cereal Cookie Dough Matcha">
+                    Cereal Cookie Dough Matcha
+                </option>
+
+                <option value="Matcha Latte">
+                    Matcha Latte 
+                </option>
+
+                <option value="Strawberry Matcha Latte">
+                    Strawberry Matcha Latte
+                </option>
+
+            </select>
+
+
+            
+            <label for="quantity">
+                Stock Quantity
+            </label>
+
+            <input
+                type="number"
+                id="quantity"
+                placeholder="Enter stock quantity"
+                min="1"
+            >
+
+
+          
+           <button py-click="SKU_generator">Generate SKU</button>
+        </div>
+
+
+        <div class="result-box">
+
+            <h3>Your Generated SKU</h3>
+
+            <div id="sku_output">
+                Your SKU will appear here.
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+   
+    <script type="py" src="./main.py"></script>
+
+</body>
+
+</html>

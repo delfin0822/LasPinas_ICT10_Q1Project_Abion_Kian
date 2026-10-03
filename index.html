@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OBMC Entrep Fair - Receipt Generator</title>
+
+   
+    <link rel="stylesheet"
+          href="https://pyscript.net/releases/2025.2.2/core.css">
+
+    <script type="module"
+            src="https://pyscript.net/releases/2025.2.2/core.js">
+    </script>
+
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+    <nav class="navbar">
+        <a href="index.html"> Receipt Generator</a>
+        <a href="sku.html"> SKU Generator</a>
+    </nav>
+
+
+    <div class="container">
+
+        <h1>OBMC Entrep Fair</h1>
+
+        <h2>Group 1 - Matcha Cafe</h2>
+
+        <div class="menu-box">
+
+            <h3> Menu</h3>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="item1"
+                    class="item"
+                    value="120"
+                >
+                Seasalt Matcha - ₱120
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="item2"
+                    class="item"
+                    value="150"
+                >
+                 Banana Pudding Matcha - ₱150
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="item3"
+                    class="item"
+                    value="135"
+                >
+                 Cereal Cookie Dough Matcha- ₱135
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="item4"
+                    class="item"
+                    value="140"
+                >
+               Matcha Latte  - ₱140
+            </label>
+
+            <label>
+                <input
+                    type="checkbox"
+                    id="item5"
+                    class="item"
+                    value="145"
+                >
+                Strawberry Matcha Latte - ₱145
+            </label>
+
+
+                
+               <button py-click="create_order">Create Order</button>
+
+
+        </div>
+
+
+        
+        <div class="receipt">
+
+            <h3>──── Receipt ────</h3>
+
+            <div id="show">
+                Your order summary will appear here.
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script type="py" src="./main.py"></script>
+
+</body>
+
+</html>
